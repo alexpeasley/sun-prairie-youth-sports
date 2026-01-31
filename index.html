@@ -7,78 +7,106 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     <style>
         :root { --cardinal: #c41230; --wolves: #002d62; --success: #28a745; --danger: #d9534f; }
-        .east-header { color: var(--cardinal); border-left: 5px solid var(--cardinal); padding-left: 10px; }
-        .west-header { color: var(--wolves); border-left: 5px solid var(--wolves); padding-left: 10px; }
+        .east { border-left: 5px solid var(--cardinal); padding-left: 15px; margin-bottom: 10px; }
+        .west { border-left: 5px solid var(--wolves); padding-left: 15px; }
         .status-open { color: var(--success); font-weight: bold; }
         .status-closed { color: var(--danger); font-weight: bold; }
-        .info-box { background: #f0f0f0; padding: 15px; border-radius: 8px; margin: 10px 0; font-size: 0.9em; }
-        nav a { margin-right: 10px; font-weight: bold; }
+        .season-header { background: #333; color: white; padding: 10px; border-radius: 5px; margin-top: 30px; }
+        nav { position: sticky; top: 0; background: #fff; padding: 10px 0; z-index: 100; border-bottom: 1px solid #ddd; display: flex; gap: 15px; flex-wrap: wrap; }
+        nav a { text-decoration: none; font-weight: bold; color: #444; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Sun Prairie Youth Sports (K-8)</h1>
-        <p>A comprehensive directory for the 2026 season.</p>
+        <p>Comprehensive 2026 Directory & Seasonal Timelines.</p>
         <nav>
-            <a href="#football">Football</a> | 
-            <a href="#baseball">Baseball/Softball</a> | 
-            <a href="#soccer">Soccer</a> | 
-            <a href="#more">More Sports</a>
+            <a href="#spring">Spring</a>
+            <a href="#summer">Summer</a>
+            <a href="#fall">Fall</a>
+            <a href="#winter">Winter/Year-Round</a>
         </nav>
     </header>
 
-    <hr>
+    <h2 id="spring" class="season-header">🌱 Spring Season (March - June)</h2>
+    <table>
+        <thead>
+            <tr><th>Sport</th><th>Organization</th><th>Registration Deadline</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Baseball/Softball (Rec)</strong></td>
+                <td>SPYBAS</td>
+                <td><span class="status-open">OPEN NOW (Ends March)</span></td>
+            </tr>
+            <tr>
+                <td><strong>Soccer (Spring League)</strong></td>
+                <td>SPSC / i9 Sports</td>
+                <td><span class="status-open">March 27, 2026</span></td>
+            </tr>
+            <tr>
+                <td><strong>Volleyball (Instructional)</strong></td>
+                <td>i9 / PAC</td>
+                <td><span class="status-open">Late Feb/March</span></td>
+            </tr>
+            <tr>
+                <td><strong>Lacrosse</strong></td>
+                <td>SPYLC</td>
+                <td>Late February</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <section id="football">
-        <h2>🏈 Tackle Football (Grades 4-8)</h2>
-        <p><em>Registration for both programs opens <strong>April 1st, 2026</strong>.</em></p>
-        
-        <div class="east-header">
-            <h3>Sun Prairie East (Cardinals)</h3>
-            <p><strong>Deadline:</strong> <span class="status-closed">June 15, 2026</span><br>
-            <strong>Early Bird:</strong> April 1 - April 30 ($225)<br>
-            <a href="https://www.sunprairieyouthfootball.com/">East Website</a></p>
-        </div>
-
-        <div class="west-header">
-            <h3>Sun Prairie West (Wolves)</h3>
-            <p><strong>Deadline:</strong> <span class="status-closed">June 30, 2026</span><br>
-            <strong>Early Bird:</strong> $50 Discount in April<br>
-            <a href="https://www.spwestyouthfb.com/">West Website</a></p>
-        </div>
-    </section>
-
-    <section id="baseball">
-        <h2>⚾ Baseball & Softball (SPYBAS)</h2>
-        <table>
-            <thead>
-                <tr><th>League Type</th><th>Registration Status</th><th>Link</th></tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Recreational (4K-8th)</strong></td>
-                    <td><span class="status-open">OPEN NOW</span></td>
-                    <td><a href="https://www.spybas.com/">Register</a></td>
-                </tr>
-                <tr>
-                    <td><strong>Travel Baseball/Softball</strong></td>
-                    <td><span class="status-closed">Closed for 2026</span></td>
-                    <td><a href="https://www.spybas.com/travel-teams">Info</a></td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="info-box">
-            <strong>Travel Ball Tip:</strong> Tryouts for 2027 Travel/Tournament teams (Starz & Travel Baseball) will happen in <strong>July/August 2026</strong>. Watch the SPYBAS site for dates!
-        </div>
-    </section>
-
-    <section id="soccer">
-        <h2>⚽ Soccer</h2>
+    <h2 id="summer" class="season-header">☀️ Summer Season (June - August)</h2>
+    <div class="info-box">
+        <h3>🏊 Summer Swimming Options</h3>
         <ul>
-            <li><strong>Sun Prairie Soccer Club:</strong> Offers In-House and Competitive. Spring registration peaks in March. <a href="https://www.sunprairiesoccer.com/">Visit Site</a></li>
-            <li><strong>i9 Sports:</strong> Great for recreational play. Spring deadline: <span class="status-closed">March 27, 2026</span>. <a href="https://www.i9sports.com/">Visit Site</a></li>
+            <li><strong>SP Piranhas:</strong> Summer community team. Registration opens Late Jan/Feb.</li>
+            <li><strong>Swim Storm:</strong> Summer session evaluations typically in April/May.</li>
         </ul>
-    </section>
+    </div>
+    <table>
+        <thead>
+            <tr><th>Sport</th><th>Organization</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Travel Baseball/Softball</strong></td>
+                <td>SPYBAS</td>
+                <td>Games May-Aug. Tryouts for 2027 in July!</td>
+            </tr>
+            <tr>
+                <td><strong>Tackle Football Training</strong></td>
+                <td>East/West Boards</td>
+                <td>Camps usually held in July.</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <section id="more">
+    <h2 id="fall" class="season-header">🍂 Fall Season (August - October)</h2>
+    <div class="east">
+        <h3>Sun Prairie East Football</h3>
+        <p>Registration: April 1 - June 15 | <a href="https://www.sunprairieyouthfootball.com/">East Site</a></p>
+    </div>
+    <div class="west">
+        <h3>Sun Prairie West Football</h3>
+        <p>Registration: April 1 - June 30 | <a href="https://www.spwestyouthfb.com/">West Site</a></p>
+    </div>
+    <p><strong>Other Fall Sports:</strong> Fall Soccer (Reg in July), Cross Country (Middle School), and Swim Storm Fall Session.</p>
+
+    <h2 id="winter" class="season-header">❄️ Winter & Year-Round</h2>
+    <ul>
+        <li><strong>Swim Storm (Year-Round):</strong> Competitive club. Sessions: Sept-Nov, Nov-Feb, Mar-May. <a href="https://www.gomotionapp.com/team/wisps/page/home">Visit Storm Site</a></li>
+        <li><strong>Wrestling:</strong> Sun Prairie Youth Wrestling Club. Registration typically opens in Oct.</li>
+        <li><strong>Basketball:</strong> i9 Sports and YMCA. Winter registration usually opens Oct/Nov.</li>
+        <li><strong>Gymnastics:</strong> Prairie Kids Club / Flip City. Open year-round.</li>
+    </ul>
+
+    <footer>
+        <hr>
+        <p><em>Last update: January 31, 2026. Dates are subject to change by individual clubs.</em></p>
+    </footer>
+
+</body>
+</html>
