@@ -9,9 +9,9 @@
         :root { --cardinal: #c41230; --wolves: #002d62; --success: #28a745; --danger: #d9534f; --groundhog: #8b4513; }
         .east { border-left: 5px solid var(--cardinal); padding-left: 15px; margin-bottom: 10px; }
         .west { border-left: 5px solid var(--wolves); padding-left: 15px; }
-        .special-box { border-left: 5px solid var(--groundhog); padding-left: 15px; background: #fdf5e6; padding: 10px; border-radius: 0 8px 8px 0; margin-bottom: 20px; }
+        .highlight-box { border: 1px solid #ddd; padding: 15px; border-radius: 8px; margin-bottom: 20px; background: #fff; }
         .status-open { color: var(--success); font-weight: bold; }
-        .status-closed { color: var(--danger); font-weight: bold; }
+        .status-urgent { color: var(--danger); font-weight: bold; text-transform: uppercase; }
         .season-header { background: #333; color: white; padding: 10px; border-radius: 5px; margin-top: 30px; }
         nav { position: sticky; top: 0; background: #fff; padding: 10px 0; z-index: 100; border-bottom: 1px solid #ddd; display: flex; gap: 15px; flex-wrap: wrap; }
         nav a { text-decoration: none; font-weight: bold; color: #444; }
@@ -20,8 +20,8 @@
 <body>
 
     <header>
-        <h1>Sun Prairie Youth Sports Directory</h1>
-        <p>Your 2026 Guide to K-8 Athletics in Sun Prairie, WI.</p>
+        <h1>Sun Prairie Youth Sports Guide (K-8)</h1>
+        <p>Comprehensive 2026 Directory & Seasonal Timelines for Sun Prairie, WI.</p>
         <nav>
             <a href="#spring">Spring</a>
             <a href="#summer">Summer</a>
@@ -31,63 +31,32 @@
     </header>
 
     <h2 id="spring" class="season-header">🌱 Spring Season (March - June)</h2>
+    <div class="highlight-box">
+        <h3>⚾ Baseball & Softball (SPYBAS)</h3>
+        <p><strong>Rec League:</strong> <span class="status-open">OPEN NOW</span>. Registration closes mid-March.</p>
+        <p><strong>Travel/Starz:</strong> Tryouts for the 2026 season were in July 2025. <em>Watch for 2027 tryouts this July.</em></p>
+        <a href="https://www.spybas.com/">SPYBAS Website</a>
+    </div>
     <table>
         <thead>
-            <tr><th>Sport</th><th>Organization</th><th>Status</th></tr>
+            <tr><th>Sport</th><th>Organization</th><th>Deadline</th></tr>
         </thead>
         <tbody>
-            <tr><td>Baseball/Softball</td><td><a href="https://www.spybas.com/">SPYBAS</a></td><td><span class="status-open">OPEN NOW (Rec)</span></td></tr>
-            <tr><td>Soccer</td><td><a href="https://www.sunprairiesoccer.com/">SPSC</a> / i9</td><td><span class="status-open">Closes March 27</span></td></tr>
-            <tr><td>Lacrosse</td><td><a href="https://www.sunprairielacrosse.org/">SPYLC</a></td><td>Closes Late Feb</td></tr>
+            <tr><td>Soccer</td><td><a href="https://www.sunprairiesoccer.com/">SPSC</a> / i9</td><td><span class="status-urgent">March 27, 2026</span></td></tr>
+            <tr><td>Lacrosse</td><td><a href="https://www.sunprairielacrosse.org/">SPYLC</a></td><td>Late February</td></tr>
         </tbody>
     </table>
 
     <h2 id="summer" class="season-header">☀️ Summer Season (June - August)</h2>
-    <div class="info-box">
-        <h3>🏊 Swimming</h3>
+    <div class="highlight-box">
+        <h3>🏊 Swimming & Water Sports</h3>
         <ul>
-            <li><strong>SP Piranhas:</strong> Summer-only community team. Registration opens Feb.</li>
-            <li><strong>Swim Storm:</strong> Year-round competitive club. <a href="https://www.gomotionapp.com/team/wisps/page/home">Visit Site</a></li>
+            <li><strong>SP Piranhas:</strong> Community summer team. Reg opens late Jan/Feb. Requires 25m swim ability for 8U.</li>
+            <li><strong>Swim Storm:</strong> Year-round USA Swimming club. Evaluates new swimmers in May for Summer session.</li>
         </ul>
     </div>
 
     <h2 id="fall" class="season-header">🍂 Fall Season (August - October)</h2>
     <div class="east">
         <h3>SP East Youth Football (Cardinals)</h3>
-        <p>Registration: April 1 - June 15 | <a href="https://www.sunprairieyouthfootball.com/">Website</a></p>
-    </div>
-    <div class="west">
-        <h3>SP West Youth Football (Wolves)</h3>
-        <p>Registration: April 1 - June 30 | <a href="https://www.spwestyouthfb.com/">Website</a></p>
-    </div>
-
-    <h2 id="winter" class="season-header">❄️ Winter Season (October - March)</h2>
-    
-    <div class="special-box">
-        <h3>🏀 Basketball (SYBA)</h3>
-        <p>Competitive feeder program for East/West High Schools.</p>
-        <ul>
-            <li><strong>Tryouts:</strong> September 2026</li>
-            <li><strong>Registration:</strong> Starts late Summer</li>
-            <li><a href="https://www.sunprairiebasketball.com/">Official SYBA Website</a></li>
-        </ul>
-    </div>
-
-    <div class="special-box" style="border-left-color: var(--groundhog); background-color: #f0faff;">
-        <h3>🏒 Hockey (Sun Prairie Groundhogs)</h3>
-        <p>SPYHA Travel and House leagues. <a href="https://www.spyha.com/">Official Website</a></p>
-    </div>
-
-    <h3>🤼 Wrestling</h3>
-    <ul>
-        <li><a href="https://www.sunprairieyouthwrestlingclub.com/">SP Youth Wrestling Club</a> (Community)</li>
-        <li><a href="https://www.jjboxing.com/">JJ's Boxing & Wrestling</a> (Private/Year-round)</li>
-    </ul>
-
-    <footer>
-        <hr>
-        <p><em>Last updated: Jan 31, 2026. This is an unofficial resource.</em></p>
-    </footer>
-
-</body>
-</html>
+        <p><strong>Ages:</strong> Grades 4-8 Tackle. <strong>Registration:</strong> April 1 - June 15.</p
