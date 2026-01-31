@@ -9,7 +9,7 @@
         :root { --cardinal: #c41230; --wolves: #002d62; --success: #28a745; --danger: #d9534f; --groundhog: #8b4513; }
         .east { border-left: 5px solid var(--cardinal); padding-left: 15px; margin-bottom: 10px; }
         .west { border-left: 5px solid var(--wolves); padding-left: 15px; }
-        .hockey-box { border-left: 5px solid var(--groundhog); padding-left: 15px; background: #fdf5e6; padding: 10px; border-radius: 0 8px 8px 0; }
+        .special-box { border-left: 5px solid var(--groundhog); padding-left: 15px; background: #fdf5e6; padding: 10px; border-radius: 0 8px 8px 0; margin-bottom: 20px; }
         .status-open { color: var(--success); font-weight: bold; }
         .status-closed { color: var(--danger); font-weight: bold; }
         .season-header { background: #333; color: white; padding: 10px; border-radius: 5px; margin-top: 30px; }
@@ -20,13 +20,13 @@
 <body>
 
     <header>
-        <h1>Sun Prairie Youth Sports Guide</h1>
-        <p>Your directory for K-8 athletics in Sun Prairie, WI (2026 Season).</p>
+        <h1>Sun Prairie Youth Sports Directory</h1>
+        <p>Your 2026 Guide to K-8 Athletics in Sun Prairie, WI.</p>
         <nav>
             <a href="#spring">Spring</a>
             <a href="#summer">Summer</a>
             <a href="#fall">Fall</a>
-            <a href="#winter">Winter/Year-Round</a>
+            <a href="#winter">Winter</a>
         </nav>
     </header>
 
@@ -36,9 +36,9 @@
             <tr><th>Sport</th><th>Organization</th><th>Status</th></tr>
         </thead>
         <tbody>
-            <tr><td>Baseball/Softball</td><td>SPYBAS</td><td><span class="status-open">OPEN NOW (Rec)</span></td></tr>
-            <tr><td>Soccer</td><td>SPSC / i9 Sports</td><td><span class="status-open">Closes March 27</span></td></tr>
-            <tr><td>Lacrosse</td><td>SPYLC</td><td>Closes Late Feb</td></tr>
+            <tr><td>Baseball/Softball</td><td><a href="https://www.spybas.com/">SPYBAS</a></td><td><span class="status-open">OPEN NOW (Rec)</span></td></tr>
+            <tr><td>Soccer</td><td><a href="https://www.sunprairiesoccer.com/">SPSC</a> / i9</td><td><span class="status-open">Closes March 27</span></td></tr>
+            <tr><td>Lacrosse</td><td><a href="https://www.sunprairielacrosse.org/">SPYLC</a></td><td>Closes Late Feb</td></tr>
         </tbody>
     </table>
 
@@ -46,8 +46,8 @@
     <div class="info-box">
         <h3>🏊 Swimming</h3>
         <ul>
-            <li><strong>SP Piranhas:</strong> Summer community team. Reg opens Late Jan/Feb.</li>
-            <li><strong>Swim Storm:</strong> Year-round club. Summer evaluations in May.</li>
+            <li><strong>SP Piranhas:</strong> Summer-only community team. Registration opens Feb.</li>
+            <li><strong>Swim Storm:</strong> Year-round competitive club. <a href="https://www.gomotionapp.com/team/wisps/page/home">Visit Site</a></li>
         </ul>
     </div>
 
@@ -61,33 +61,32 @@
         <p>Registration: April 1 - June 30 | <a href="https://www.spwestyouthfb.com/">Website</a></p>
     </div>
 
-    <h2 id="winter" class="season-header">❄️ Winter & Year-Round</h2>
+    <h2 id="winter" class="season-header">❄️ Winter Season (October - March)</h2>
     
-    <div class="hockey-box">
-        <h3>🏒 Youth Hockey (Sun Prairie Groundhogs)</h3>
-        <p>Managed by <strong>SPYHA</strong>. Includes Mites through Bantam levels.</p>
+    <div class="special-box">
+        <h3>🏀 Basketball (SYBA)</h3>
+        <p>Competitive feeder program for East/West High Schools.</p>
         <ul>
-            <li><strong>Registration Opens:</strong> August 2026</li>
-            <li><strong>Season:</strong> Oct - March</li>
-            <li><a href="https://www.spyha.com/">Official Groundhogs Website</a></li>
+            <li><strong>Tryouts:</strong> September 2026</li>
+            <li><strong>Registration:</strong> Starts late Summer</li>
+            <li><a href="https://www.sunprairiebasketball.com/">Official SYBA Website</a></li>
         </ul>
+    </div>
+
+    <div class="special-box" style="border-left-color: var(--groundhog); background-color: #f0faff;">
+        <h3>🏒 Hockey (Sun Prairie Groundhogs)</h3>
+        <p>SPYHA Travel and House leagues. <a href="https://www.spyha.com/">Official Website</a></p>
     </div>
 
     <h3>🤼 Wrestling</h3>
     <ul>
-        <li><strong><a href="https://www.sunprairieyouthwrestlingclub.com/">Sun Prairie Youth Wrestling Club</a>:</strong> Community K-8. Season: Nov-March.</li>
-        <li><strong><a href="https://www.jjboxing.com/gym-sun-prarie-wi/wrestling">JJ's Boxing & Wrestling</a>:</strong> Private club team & intensive training.</li>
-    </ul>
-
-    <h3>🏀 Basketball & More</h3>
-    <ul>
-        <li><strong>Basketball:</strong> YMCA / i9 Sports / SP Hoops (Reg. Oct).</li>
-        <li><strong>Gymnastics:</strong> <a href="https://www.prairiekidsclub.com/">Prairie Kids Club</a> (Year-round).</li>
+        <li><a href="https://www.sunprairieyouthwrestlingclub.com/">SP Youth Wrestling Club</a> (Community)</li>
+        <li><a href="https://www.jjboxing.com/">JJ's Boxing & Wrestling</a> (Private/Year-round)</li>
     </ul>
 
     <footer>
         <hr>
-        <p><em>Last updated: Jan 31, 2026. Verify all dates with official club websites.</em></p>
+        <p><em>Last updated: Jan 31, 2026. This is an unofficial resource.</em></p>
     </footer>
 
 </body>
