@@ -6,73 +6,79 @@
     <title>Sun Prairie Youth Sports Guide 2026</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     <style>
-        .cardinal-red { border-left: 5px solid #c41230; padding-left: 15px; }
-        .wolves-blue { border-left: 5px solid #002d62; padding-left: 15px; }
-        .deadline { color: #d9534f; font-weight: bold; }
-        .start-date { color: #28a745; font-weight: bold; }
-        .boundary-info { background: #eee; padding: 10px; border-radius: 5px; font-size: 0.9em; }
+        :root { --cardinal: #c41230; --wolves: #002d62; --success: #28a745; --danger: #d9534f; }
+        .east-header { color: var(--cardinal); border-left: 5px solid var(--cardinal); padding-left: 10px; }
+        .west-header { color: var(--wolves); border-left: 5px solid var(--wolves); padding-left: 10px; }
+        .status-open { color: var(--success); font-weight: bold; }
+        .status-closed { color: var(--danger); font-weight: bold; }
+        .info-box { background: #f0f0f0; padding: 15px; border-radius: 8px; margin: 10px 0; font-size: 0.9em; }
+        nav a { margin-right: 10px; font-weight: bold; }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Sun Prairie Youth Sports Directory</h1>
-        <p>Your guide for K-8 sports registration in Sun Prairie, WI (2026 Season).</p>
+        <h1>Sun Prairie Youth Sports (K-8)</h1>
+        <p>A comprehensive directory for the 2026 season.</p>
+        <nav>
+            <a href="#football">Football</a> | 
+            <a href="#baseball">Baseball/Softball</a> | 
+            <a href="#soccer">Soccer</a> | 
+            <a href="#more">More Sports</a>
+        </nav>
     </header>
 
-    <section>
+    <hr>
+
+    <section id="football">
         <h2>🏈 Tackle Football (Grades 4-8)</h2>
-        <div class="boundary-info">
-            <strong>Check Your Boundary:</strong> Players must register for the team associated with their future high school (East vs. West). 
-            <a href="https://www.sunprairiesoccer.com/">View District Map</a>
+        <p><em>Registration for both programs opens <strong>April 1st, 2026</strong>.</em></p>
+        
+        <div class="east-header">
+            <h3>Sun Prairie East (Cardinals)</h3>
+            <p><strong>Deadline:</strong> <span class="status-closed">June 15, 2026</span><br>
+            <strong>Early Bird:</strong> April 1 - April 30 ($225)<br>
+            <a href="https://www.sunprairieyouthfootball.com/">East Website</a></p>
         </div>
 
-        <div class="cardinal-red">
-            <h3>Sun Prairie East Youth Football (Cardinals)</h3>
-            <ul>
-                <li><span class="start-date">Registration Opens:</span> April 1, 2026</li>
-                <li><strong>Early Bird Price:</strong> $225 (Ends April 30)</li>
-                <li><span class="deadline">Final Deadline:</span> June 15, 2026</li>
-                <li><a href="https://www.sunprairieyouthfootball.com/">Official Website</a></li>
-            </ul>
-        </div>
-
-        <div class="wolves-blue">
-            <h3>Sun Prairie West Youth Football (Wolves)</h3>
-            <ul>
-                <li><span class="start-date">Registration Opens:</span> April 1, 2026</li>
-                <li><strong>Early Bird Discount:</strong> $50 off (Ends April 30)</li>
-                <li><span class="deadline">Final Deadline:</span> June 30, 2026</li>
-                <li><a href="https://www.spwestyouthfb.com/">Official Website</a></li>
-            </ul>
+        <div class="west-header">
+            <h3>Sun Prairie West (Wolves)</h3>
+            <p><strong>Deadline:</strong> <span class="status-closed">June 30, 2026</span><br>
+            <strong>Early Bird:</strong> $50 Discount in April<br>
+            <a href="https://www.spwestyouthfb.com/">West Website</a></p>
         </div>
     </section>
 
-    <section>
-        <h2>⚽ Soccer & Gymnastics</h2>
+    <section id="baseball">
+        <h2>⚾ Baseball & Softball (SPYBAS)</h2>
         <table>
             <thead>
-                <tr><th>Program</th><th>Details</th></tr>
+                <tr><th>League Type</th><th>Registration Status</th><th>Link</th></tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Sun Prairie Soccer Club</strong></td>
-                    <td>U5-U14 programs. Registration typically opens in Feb/March.</td>
+                    <td><strong>Recreational (4K-8th)</strong></td>
+                    <td><span class="status-open">OPEN NOW</span></td>
+                    <td><a href="https://www.spybas.com/">Register</a></td>
                 </tr>
                 <tr>
-                    <td><strong>Prairie Kids Club</strong></td>
-                    <td>Year-round gymnastics, tumbling, and ninja warrior classes.</td>
-                </tr>
-                <tr>
-                    <td><strong>i9 Sports</strong></td>
-                    <td>Flag football and soccer. Spring deadline: <span class="deadline">March 27, 2026</span>.</td>
+                    <td><strong>Travel Baseball/Softball</strong></td>
+                    <td><span class="status-closed">Closed for 2026</span></td>
+                    <td><a href="https://www.spybas.com/travel-teams">Info</a></td>
                 </tr>
             </tbody>
         </table>
+        <div class="info-box">
+            <strong>Travel Ball Tip:</strong> Tryouts for 2027 Travel/Tournament teams (Starz & Travel Baseball) will happen in <strong>July/August 2026</strong>. Watch the SPYBAS site for dates!
+        </div>
     </section>
 
-    <footer>
-        <hr>
-        <p>Last updated: January 2026. This is a community directory and is not affiliated with the city or school district.</p>
-    </footer>
-</body>
-</html>
+    <section id="soccer">
+        <h2>⚽ Soccer</h2>
+        <ul>
+            <li><strong>Sun Prairie Soccer Club:</strong> Offers In-House and Competitive. Spring registration peaks in March. <a href="https://www.sunprairiesoccer.com/">Visit Site</a></li>
+            <li><strong>i9 Sports:</strong> Great for recreational play. Spring deadline: <span class="status-closed">March 27, 2026</span>. <a href="https://www.i9sports.com/">Visit Site</a></li>
+        </ul>
+    </section>
+
+    <section id="more">
