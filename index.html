@@ -8,7 +8,7 @@
     <style>
         :root { 
             --cardinal: #c41230; --wolves: #002d62; --success: #28a745; 
-            --danger: #d9534f; --track: #5d3fd3; --groundhog: #8b4513; 
+            --danger: #d9534f; --track: #5d3fd3; --groundhog: #8b4513; --wrestling: #cc7a00;
         }
         body { max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; }
         
@@ -29,8 +29,10 @@
             font-weight: bold;
             font-size: 0.85em;
             border: 1px solid #ddd;
+            transition: transform 0.1s ease;
         }
-        .link-card:hover { background: #eee; border-color: #999; }
+        .link-card:hover { background: #eee; border-color: #999; transform: translateY(-2px); }
+        .wrestling-btn { border-left: 5px solid var(--wrestling); }
 
         /* Navigation */
         nav { 
@@ -52,6 +54,8 @@
         .east-accent { border-top: 5px solid var(--cardinal); }
         .west-accent { border-top: 5px solid var(--wolves); }
         .hockey-accent { border-top: 5px solid var(--groundhog); }
+        .wrestling-accent { border-top: 5px solid var(--wrestling); }
+        
         .status-badge { background: var(--success); color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.8em; float: right; }
         .sport-title { font-size: 1.6em; margin: 0 0 10px 0; color: #222; }
     </style>
@@ -68,6 +72,8 @@
         <a href="https://www.sunprairiebasketball.com/" class="link-card">🏀 SYBA Basketball</a>
         <a href="https://www.spyha.com/" class="link-card">🏒 Hockey (Groundhogs)</a>
         <a href="https://www.sunprairiesoccer.com/" class="link-card">⚽ SPSC Soccer</a>
+        <a href="https://www.sunprairieyouthwrestlingclub.com/" class="link-card wrestling-btn">🤼 Youth Wrestling Club</a>
+        <a href="https://www.jjboxing.com/" class="link-card wrestling-btn">🥊 JJ's Wrestling/Boxing</a>
         <a href="https://www.spbolts.com/" class="link-card">🏃 Bolts Track</a>
         <a href="https://www.sunprairiepiranhas.com/" class="link-card">🏊 Piranhas Swim</a>
         <a href="https://www.sunprairieyouthfootball.com/" class="link-card">🏈 East Football</a>
@@ -118,6 +124,15 @@
 
     <h2 id="winter" class="season-header">❄️ Winter Season</h2>
 
+    <div class="sport-card wrestling-accent">
+        <h3 class="sport-title">🤼 Wrestling</h3>
+        <p>Sun Prairie has two primary paths for wrestling. Both are highly active during the winter months.</p>
+        <ul>
+            <li><strong>SP Youth Wrestling Club:</strong> Community K-8 club starting in November. Focuses on folkstyle basics and sportsmanship. <a href="https://www.sunprairieyouthwrestlingclub.com/">Official Website</a></li>
+            <li><strong>JJ's Boxing & Wrestling:</strong> Offers technical youth wrestling training year-round. Great for kids looking for intensive off-season or technical advancement. <a href="https://www.jjboxing.com/">Official Website</a></li>
+        </ul>
+    </div>
+
     <div class="sport-card" style="border-top: 5px solid orange;">
         <h3 class="sport-title">🏀 Basketball (SYBA)</h3>
         <p>Competitive "feeder" program for grades 3-8. Features mandatory evaluations to place players on travel or house teams based on skill level.</p>
@@ -128,12 +143,6 @@
         <h3 class="sport-title">🏒 Hockey (Sun Prairie Groundhogs)</h3>
         <p>Run by SPYHA at the Sun Prairie Ice Arena. Includes a highly popular "Mini-Mite" learn-to-play program. Competitive travel teams start at the Squirt level (10U).</p>
         <p><strong>Registration:</strong> August. <strong>Equipment Rental:</strong> Available for beginners.</p>
-    </div>
-
-    <div class="sport-card">
-        <h3 class="sport-title">🤼 Wrestling</h3>
-        <p><strong>SP Youth Wrestling:</strong> Community K-8 club starting in November. Focuses on folkstyle basics. <a href="https://www.sunprairieyouthwrestlingclub.com/">Website</a></p>
-        <p><strong>JJ's Boxing & Wrestling:</strong> Offers technical youth wrestling training year-round at their West Main St. facility. <a href="https://www.jjboxing.com/">Website</a></p>
     </div>
 
     <h2 id="yearround" class="season-header">🔄 Year-Round Programs</h2>
