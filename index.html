@@ -12,7 +12,27 @@
         }
         body { max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; }
         
-        /* Sticky Nav to help find sports quickly */
+        /* Quick Link Grid */
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .link-card {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 0.85em;
+            border: 1px solid #ddd;
+        }
+        .link-card:hover { background: #eee; border-color: #999; }
+
+        /* Navigation */
         nav { 
             position: sticky; top: 0; background: #fff; padding: 10px 0; 
             z-index: 100; border-bottom: 2px solid #eee; display: flex; 
@@ -20,35 +40,39 @@
         }
         nav a { text-decoration: none; font-weight: bold; font-size: 0.85em; }
 
+        /* Sport Details */
         .sport-card { 
             border: 1px solid #e1e1e1; border-radius: 10px; padding: 25px; 
             margin-bottom: 30px; background: #fff; box-shadow: 2px 2px 10px rgba(0,0,0,0.03);
         }
-        
         .season-header { 
             background: #333; color: white; padding: 15px; 
             border-radius: 6px; margin: 40px 0 20px 0; text-transform: uppercase; 
         }
-
         .east-accent { border-top: 5px solid var(--cardinal); }
         .west-accent { border-top: 5px solid var(--wolves); }
         .hockey-accent { border-top: 5px solid var(--groundhog); }
-        
-        .tag { font-size: 0.8em; font-weight: bold; background: #f0f0f0; padding: 3px 10px; border-radius: 5px; margin-right: 5px; }
         .status-badge { background: var(--success); color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.8em; float: right; }
-        
         .sport-title { font-size: 1.6em; margin: 0 0 10px 0; color: #222; }
-        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px; }
-        
-        @media (max-width: 600px) { .info-grid { grid-template-columns: 1fr; } .status-badge { float: none; display: block; margin-top: 10px; } }
     </style>
 </head>
 <body>
 
     <header style="text-align: center;">
-        <h1>Sun Prairie Youth Sports Directory</h1>
-        <p>A complete 2026 guide for K-8 athletics. All dates, links, and details in one place.</p>
+        <h1>Sun Prairie Youth Sports Guide</h1>
+        <p>Comprehensive 2026 directory. Information on every K-8 program in town.</p>
     </header>
+
+    <div class="link-grid">
+        <a href="https://www.spybas.com/" class="link-card">⚾ SPYBAS Baseball</a>
+        <a href="https://www.sunprairiebasketball.com/" class="link-card">🏀 SYBA Basketball</a>
+        <a href="https://www.spyha.com/" class="link-card">🏒 Hockey (Groundhogs)</a>
+        <a href="https://www.sunprairiesoccer.com/" class="link-card">⚽ SPSC Soccer</a>
+        <a href="https://www.spbolts.com/" class="link-card">🏃 Bolts Track</a>
+        <a href="https://www.sunprairiepiranhas.com/" class="link-card">🏊 Piranhas Swim</a>
+        <a href="https://www.sunprairieyouthfootball.com/" class="link-card">🏈 East Football</a>
+        <a href="https://www.spwestyouthfb.com/" class="link-card">🏈 West Football</a>
+    </div>
 
     <nav>
         <a href="#spring">Spring/Summer</a>
@@ -62,87 +86,71 @@
     <div class="sport-card">
         <span class="status-badge">REGISTRATION OPEN</span>
         <h3 class="sport-title">⚾ Baseball & Softball (SPYBAS)</h3>
-        <p>The core community organization for baseball and softball. Includes 4K-8th grade programs with a heavy focus on recreational fun and skill building.</p>
-        <div class="info-grid">
-            <div>
-                <strong>Rec League:</strong> Jan - March registration. Games start in May at Sheehan and Bird St. Parks.
-            </div>
-            <div>
-                <strong>Travel (Starz):</strong> Competitive teams. Tryouts for 2027 are in <strong>July 2026</strong>.
-            </div>
-        </div>
-        <p><a href="https://www.spybas.com/">Visit Official SPYBAS Website →</a></p>
+        <p>Serves 4K through 8th Grade. The recreational league focus is on skill-building and teamwork. Travel teams (Starz) offer a more competitive multi-tournament experience.</p>
+        <p><strong>Registration:</strong> Jan - mid-March. <strong>Travel Tryouts:</strong> Late July/August.</p>
     </div>
 
     <div class="sport-card">
         <h3 class="sport-title">🏃 Track & Field (Sun Prairie Bolts)</h3>
-        <p>Competitive summer track for ages 7-18. Focuses on AAU and USATF sanctioned meets (Sprints, Distance, and Field events).</p>
-        <div class="info-grid">
-            <div><strong>Season:</strong> May - July.</div>
-            <div><strong>Reg Window:</strong> Opens Late March.</div>
-        </div>
-        <p><a href="https://www.spbolts.com/">Visit Official Bolts Website →</a></p>
+        <p>The Bolts focus on competitive track events (sprints, hurdles, distance) and field events. Ages 7-18. Compete in AAU/USATF meets during the summer months.</p>
+        <p><strong>Registration Opens:</strong> Late March. <strong>Season:</strong> May - July.</p>
     </div>
 
     <div class="sport-card">
         <h3 class="sport-title">🏊 Summer Swim (Sun Prairie Piranhas)</h3>
-        <p>A fun, community-driven summer team competing in the Tri-County league. Swimmers must be able to swim 25m unassisted. Practice is held at the Family Aquatic Center.</p>
-        <p><strong>Registration:</strong> Opens late Jan/February. Meets are on Saturday mornings.</p>
-        <p><a href="https://www.sunprairiepiranhas.com/">Visit Piranhas Website →</a></p>
+        <p>Community team practicing at the Family Aquatic Center. Part of the Tri-County league. Open to kids 5-18 who can swim 25m without help.</p>
+        <p><strong>Registration:</strong> Opens late Jan/February.</p>
     </div>
 
-    <h2 id="fall" class="season-header">🍂 Fall Football (Feeder Programs)</h2>
+    <h2 id="fall" class="season-header">🍂 Fall Football</h2>
 
     <div class="sport-card east-accent">
         <h3 class="sport-title">🏈 SP East Youth Football (Cardinals)</h3>
-        <p>The official tackle program for grades 4-8 within the East High School boundary. Coaches teach the Cardinal system to prepare kids for high school play.</p>
-        <p><strong>Registration:</strong> April 1 – June 15. <a href="https://www.sunprairieyouthfootball.com/">East Site</a></p>
+        <p>Grades 4-8. This program aligns with the SP East High School system. Practices are held at various elementary/middle school fields in the East boundary.</p>
+        <p><strong>Registration:</strong> April 1 – June 15.</p>
     </div>
 
     <div class="sport-card west-accent">
         <h3 class="sport-title">🏈 SP West Youth Football (Wolves)</h3>
-        <p>The official tackle program for grades 4-8 within the West High School boundary. Focused on safety-first tackling and "Wolfpack" culture.</p>
-        <p><strong>Registration:</strong> April 1 – June 30. <a href="https://www.spwestyouthfb.com/">West Site</a></p>
+        <p>Grades 4-8. Aligns with the SP West High School system. Features "Heads Up" football training and Wolfpack culture development.</p>
+        <p><strong>Registration:</strong> April 1 – June 30.</p>
     </div>
 
     <h2 id="winter" class="season-header">❄️ Winter Season</h2>
 
     <div class="sport-card" style="border-top: 5px solid orange;">
         <h3 class="sport-title">🏀 Basketball (SYBA)</h3>
-        <p>Sun Prairie's primary competitive "feeder" program for grades 3-8. Features travel teams that compete in regional tournaments. Highly recommended for kids wanting to play in High School.</p>
-        <p><strong>Mandatory Tryouts:</strong> September. <strong>Reg Opens:</strong> August.</p>
-        <p><a href="https://www.sunprairiebasketball.com/">Visit SYBA Website →</a></p>
+        <p>Competitive "feeder" program for grades 3-8. Features mandatory evaluations to place players on travel or house teams based on skill level.</p>
+        <p><strong>Tryouts:</strong> September. <strong>Registration:</strong> August.</p>
     </div>
 
     <div class="sport-card hockey-accent">
         <h3 class="sport-title">🏒 Hockey (Sun Prairie Groundhogs)</h3>
-        <p>The SPYHA runs the Groundhogs program at the Sun Prairie Ice Arena. Includes Mini-Mites (Learn to Play) through competitive travel Bantam teams (14U).</p>
-        <p><strong>Reg Opens:</strong> August. <strong>Season:</strong> Oct - March. Equipment rental available for beginners.</p>
-        <p><a href="https://www.spyha.com/">Visit SPYHA Website →</a></p>
+        <p>Run by SPYHA at the Sun Prairie Ice Arena. Includes a highly popular "Mini-Mite" learn-to-play program. Competitive travel teams start at the Squirt level (10U).</p>
+        <p><strong>Registration:</strong> August. <strong>Equipment Rental:</strong> Available for beginners.</p>
     </div>
 
     <div class="sport-card">
         <h3 class="sport-title">🤼 Wrestling</h3>
-        <p><strong>SP Youth Wrestling Club:</strong> Community K-8 club. Season starts in Nov. Great for beginners. <a href="https://www.sunprairieyouthwrestlingclub.com/">Website</a></p>
-        <p><strong>JJ's Boxing & Wrestling:</strong> Private facility offering year-round intensive youth training. <a href="https://www.jjboxing.com/">Website</a></p>
+        <p><strong>SP Youth Wrestling:</strong> Community K-8 club starting in November. Focuses on folkstyle basics. <a href="https://www.sunprairieyouthwrestlingclub.com/">Website</a></p>
+        <p><strong>JJ's Boxing & Wrestling:</strong> Offers technical youth wrestling training year-round at their West Main St. facility. <a href="https://www.jjboxing.com/">Website</a></p>
     </div>
 
     <h2 id="yearround" class="season-header">🔄 Year-Round Programs</h2>
 
     <div class="sport-card">
-        <h3 class="sport-title">🏊 Swim Storm</h3>
-        <p>A competitive USA Swimming club for year-round swimmers. Requires an evaluation. Sessions occur in Fall, Winter, Spring, and Summer.</p>
-        <p><a href="https://www.gomotionapp.com/team/wisps/page/home">Visit Swim Storm Website →</a></p>
+        <h3 class="sport-title">🏹 Archery Club</h3>
+        <p>The Sun Prairie Archery Club (NASP) is for grades 6-12. Many elementary schools also host "Coyote Archers" or similar clubs for 4th and 5th graders.</p>
     </div>
 
     <div class="sport-card">
-        <h3 class="sport-title">🏹 Archery & More</h3>
-        <p><strong>Archery:</strong> Sun Prairie Archery Club (NASP) for grades 6-12. Parks & Rec offers family intro classes.</p>
-        <p><strong>Gymnastics:</strong> <a href="https://www.prairiekidsclub.com/">Prairie Kids Club</a> offers year-round classes and teams.</p>
+        <h3 class="sport-title">🏊 Swim Storm</h3>
+        <p>USA Swimming competitive club. Offers training for all age groups at various area pools. Requires an evaluation for placement.</p>
+        <p><a href="https://www.gomotionapp.com/team/wisps/page/home">Visit Swim Storm Website →</a></p>
     </div>
 
     <footer>
-        <p><em>Last updated: Jan 31, 2026. This is an unofficial community resource.</em></p>
+        <p><em>Last updated: Jan 31, 2026. This is an unofficial resource for Sun Prairie families.</em></p>
     </footer>
 
 </body>
